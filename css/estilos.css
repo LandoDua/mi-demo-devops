@@ -1,0 +1,428 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #242a2d;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+header {
+    display: flex;
+    padding: 5px 0px;
+    background-color: #e7e6e6;
+    justify-content: space-between;
+
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    
+}
+
+header li {
+    margin: 0 10px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+   color: #E7E6E6; 
+   text-align: center;
+   font-family: "Playfair Display", serif;
+   font-weight: 800;
+}
+
+h2{
+    color: #E7E6E6; 
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+ }
+
+ h3{
+    color: #E7E6E6; 
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+ }
+
+ h4{
+    color: #E7E6E6; 
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+ }
+
+h5 {
+    color: #E7E6E6;
+    size: 40px;
+    font-size: 40px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400; 
+ }
+
+ p {
+    color: #E7E6E6; 
+ }
+
+
+.botonera {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.botonera button{
+    margin: 5px;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+main{
+    padding: 15px;
+    justify-content: center;
+    display: inline;
+    flex-wrap: wrap;
+    min-height: 1400px;
+}
+
+.imgSlider {
+    /* width: 50%; */
+    height: auto;
+    padding: 10px 0px;
+}
+
+#categorias {
+    /* border: 1px solid green; */
+    padding: 0px;
+    align-content: flex-start;
+    display: flex;
+    /* overflow: scroll; */
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.cardCat {
+    border: 3px solid #E7E6E6;
+    width: 350px;
+    height: 450px;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 10px;
+    /* width: fit-content; */
+    background-color: #e7e6e6;
+}
+
+.cardCat img {
+    width: 90%;
+    height: auto;
+    margin: 5%;
+}
+
+.cardCat h2 {
+    text-align: center;
+    font-weight: 500;
+    color: #f09e05;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+
+.cardCat a{
+    color: #f09e05;
+}
+
+/*-------------------------------------------*/
+/* NavBar de BootStrap */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #E7E6E6;
+    overflow: hidden;
+    align-content: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #3d1600;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #f09e05;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #faa916;
+    color: white;
+}
+
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 625px) {
+
+    .topnav a:not(.active),
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* fin de navbar*/
+
+.btn-light{
+    background-color: #f09e05;
+    color: #e7e6e6;
+}
+
+footer{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    height: 140px;
+    text-align: center;
+
+    background-color: #E7E6E6;
+    color: #242a2d;
+
+
+}
+
+footer div{
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+footer div i{
+    font-size: 30px;
+    margin: 0px 5px;
+    color: #f09e05;
+}
+
+#carouselExampleDark{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 0% 5%;
+
+}
+
+.carouselExampleDark img{
+    width: 80%;
+}
+
+.carouselExampleDark button{
+    color: #E7E6E6;
+}
+
+.carousel-item img {
+    width: 80%;
+    height: auto;
+}
+
+
+#section-nosotros div {
+    padding: 15px;
+    display: list-item;
+    margin: 15px;
+}
+
+#section-nosotros p{
+    text-align: center;
+    margin: 15px 40px;
+}
+
+#section-mision {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: #3d1600; */
+    justify-content: center;
+}
+
+#section-mision div {
+    max-width: 400px;
+    height: auto;
+    margin: 30px;
+    align-content: center;
+}
+
+#section-mision img {
+    height: auto;
+    max-width: 600px;
+    min-width: 0px;
+    width: min-content;
+}
+
+#section-mision p {
+    text-align: center;
+}
+
+.form-label {
+    color: #242a2d;
+}
+
+#row-contacto{
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    
+}
+
+#form-contacto {
+    background-color: #3d1600;
+    max-width: 600px;
+    min-width: 300px;
+    
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #E7E6E6;
+}
+
+#emailHelp {
+    color: #f09e05;
+}
+
+#info-conctatos {
+    border: solid 2px;
+    border-color: #E7E6E6;
+    border-radius: 10px;
+    padding: 20px 20px;
+    height: min-content;
+    margin: 20px 5px;
+    align-items: center;
+    
+}
+
+#info-conctatos a{
+    color: #f09e05;
+
+}
+
+#info-conctatos p{
+    color: #f09e05;
+}
+
+#info-conctatos i{
+    color: #f09e05;
+    font-size: 28px;
+}
+
+#info-conctatos .d-plex{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+}

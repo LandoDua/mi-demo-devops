@@ -1,0 +1,156 @@
+<!DOCTYPE html> <!-- comentario -->
+<html lang="es-MX">
+
+<head>
+    <!-- Esta seccion HEAD comunica con navegadores información tras bambalinas. También a buscadores y otros-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/css/estilos.css">
+
+</head>
+
+<body> <!-- Esta sección es la parte visible de la página-->
+    <header>
+        <!--Este es el encabezado de la pagina-->
+        <img id="logo" src="img/gatonegrocafe.webp" width="70px" height="70px" alt="LogoTipode la empresa">
+
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="nosotros.html" >Nosotros</a>
+            <a href="contacto.html"  class="active">Contacto</a>
+
+
+            <a href="#about">Acerca de</a>
+            <a href="javascript:void(0);" class="icon" onclick="myOtherFunction()"><i class="bi bi-list"></i></a>
+        </div>
+        </div>
+
+        <div class="botonera" style="display: flex; align-items: center;">
+            <button class="btn btn-light"><i class="bi bi-search"></i></button>
+            <button class="btn btn-light"><i class="bi bi-person"></i></button>
+            <button class="btn btn-secondary"><i class="bi bi-envelope"></i></button>
+        </div>
+    </header> 
+
+    <main>
+        <div style="justify-content: center; display: flex; margin: 20px;">
+            <h1>Contacto</h1>
+        </div>
+
+        <div id="row-contacto">
+
+            <div style="width: max-content;">
+                
+                <form id="form-contacto" >
+                    <h4 style="color: #242a2d; font-size: 16; text-align: left; padding: 15px;">Si tienes algo que compartir con nosotros; aquí puedes hacerlo.</h4>
+                    <div class="mb-3">
+                        <label for="input-correo" class="form-label">Correo*</label>
+                        <input type="email" class="form-control" id="input-correo" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">No compartiremos tu correo con nadie.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="input-nombre" class="form-label">Nombre*</label>
+                        <input type="text" class="form-control" id="input-nombre" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="input-asunto" class="form-label">Asunto</label>
+                        <input type="email" class="form-control" id="input-asunto" aria-describedby="emailHelp">
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="input-comentario" class="form-label">Comentario o mensaje</label>
+                        <textarea class="form-control" id="input-comentario" rows="8"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-light">Enviar</button>
+                </form>
+            </div>
+            
+
+            <div id="info-conctatos">
+                <h4>Redes Sociales</h4>
+                <div class="d-plex">
+                    <i class="bi bi-facebook"> </i>
+                    <i class="bi bi-instagram"> </i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+
+                <h4>Correo</h4>
+                <a href=""><p>orlando.dua@gmail.com</p></a>
+                
+                <h4>Telefono</h4>
+                <p>+52 618 519 2252</p>
+                <h4>Dirección</h4>
+                <p>Av. 13 Pte. 720, Centro histórico de Puebla, 72000 Heroica Puebla de Zaragoza, Pue.</p>
+                
+                <div class="d-flex align-middle" style="width: 100%; align-content: center; margin-top: 30px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.2162732158204!2d-98.20827725150576!3d19.043899571896983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0db1a8c7509%3A0x6fbbd58ac826bc6e!2sAv.%2013%20Pte.%20720%2C%20Centro%20hist%C3%B3rico%20de%20Puebla%2C%2072000%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1728619921885!5m2!1ses-419!2smx"  width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+
+
+        
+
+    </main>
+    <footer class="d-flex align-middle">
+        <div>
+            Accesos rapidos
+        </div>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.2162732158204!2d-98.20827725150576!3d19.043899571896983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0db1a8c7509%3A0x6fbbd58ac826bc6e!2sAv.%2013%20Pte.%20720%2C%20Centro%20hist%C3%B3rico%20de%20Puebla%2C%2072000%20Heroica%20Puebla%20de%20Zaragoza%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1728619921885!5m2!1ses-419!2smx"
+            width="40%" height="100px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="d-plex">
+            <i class="bi bi-facebook"> </i>
+            <i class="bi bi-instagram"> </i>
+            <i class="bi bi-whatsapp"></i>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+    myOtherFunction = () => {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.js"></script>
+<script src="js/scripts.js"></script>
+
+</html>
